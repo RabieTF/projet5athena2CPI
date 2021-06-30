@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Athena Driver</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="log_in">Log in</string>
+    <string name="confirm">Confirm</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="take_advantage_of_all_our_features">Take advantage of all our features</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="create_a_new_account_to">Create a new account to</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="your_information">Your information</string>
+    <string name="welcome_to">Welcome, To</string>
+    <string name="get_started">Get Started</string>
+    <string name="your_map">Map</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="hotspot_connection">Hotspot connection</string>
+    <string name="activating_hotspot_please_wait">Activating hotspot… Please wait</string>
+    <string name="temperature">Temperature:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="your_license_id_number">Your license ID number</string>
+    <string name="your_license_expiry_date_dd_mm_yyyy">Your license expiry date DD/MM/YYYY</string>
+</resources>

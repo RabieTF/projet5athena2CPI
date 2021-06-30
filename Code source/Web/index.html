@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title> index </title>
+        
+    </head>
+    <body>
+    <div class="topnav">
+    <div class="logo">
+                    <img src="truck.png" style="size:30%;float:left;">
+    </div>
+        <input type="checkbox" id="show1">
+            <label for="show1" class="show-btn1" onclick="hide()" style="float:right;color:#4C566A;
+        padding: 10px 20px; text-decoration: none; font-size: 15px;  cursor: pointer;"> <strong><em> Log in </em></strong> </label>
+            <div class="container">
+                <label for="show1" class="close-btn fas fa-" title="close"  onclick="show()" > ✖️ </label>
+                <div class="text"> Log in            </div>
+                <form action="#" id="login_form">
+                <div class="data">
+                    <input type="email" placeholder="Email" id ="emailin" required>
+                </div>
+                <div class="data">
+                    <input type="password" placeholder="Password" id ="passwordin" required>
+                </div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button onclick="login()" class="bu"> Confirm </button>
+                </div>
+                    <a style="color:#fff;">  Not a member ? </a>
+    <input type="checkbox" style="color: #fff;"> <label for="show" class="show-btn1" onclick="hide()" style="cursor:pointer;display: inline;"> Signup now </a> </label></div>
+                </div>
+                </form>
+            </div>
+            <label for="show" class="show-btn" onclick="hide()" style="float:right;margin-left:38%;margin-top: -27.7%;
+            font-size:12px;  padding: 10px 20px;">
+            𝙂𝙚𝙩 𝙎𝙩𝙖𝙧𝙩𝙚𝙙 </label>
+    </div>
+    <h1 id="hidee2" > Athena </h1>
+    <h2 id="hidee" > ᴛʀᴀᴄᴋ ʏᴏᴜʀ ᴘʀᴏᴅᴜᴄᴛs ғʀᴏᴍ ᴘᴏɪɴᴛ ᴀ ᴛᴏ ᴘᴏɪɴᴛ ʙ ɪɴ ʀᴇᴀʟ ᴛɪᴍᴇ ᴡɪᴛʜ ᴏᴜʀ ʀᴇᴠᴏʟᴜᴛɪᴏɴᴀʀʏ,ɪɴɴᴏᴠᴀᴛɪᴏɴ ᴛᴇʟᴇᴍᴇᴛʀʏ </h2>
+    <br><br>
+    <div class="center">
+            <input type="checkbox" id="show">
+            <label for="show" class="show-btn" onclick="hide()" id="hidee1"> Get Started </label>
+            <div class="container" >
+                <label for="show" class="close-btn fas fa-" title="close"  onclick="show()" > ✖️ </label>
+                <div class="text">
+                            Creat an Account
+                </div>
+                <form action="#" id="signupform">
+                <div class="data">
+                    <input type="text" placeholder="First Name" id="fn" required>
+                </div>
+                <div class="data">
+                    <input type="text" placeholder="Last Name" id="ln" required>
+                </div>
+                <div class="data">
+                    <input type="text" placeholder="Company Name" id="cn" required>
+                </div>
+                <div class="data">
+                    <input type="email" placeholder="Email" id="email" required>
+                </div>
+                <div class="data">
+                    <input type="password" placeholder="Password" id="password" required>
+                </div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button  id="signUp" class="bu"> Confirm </button></div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function hide()
+            {
+                        let a=1;
+                if (a==1)
+                {
+                document.getElementById("hidee").style.display="none";
+                    document.getElementById("hidee1").style.display="none";
+                document.getElementById("hidee2").style.display="none"; }
+        return a=0;  }
+            function show()
+            {
+                                let a=0;
+                if (a==0)
+                {
+                document.getElementById("hidee").style.display="block";
+                    document.getElementById("hidee1").style.display="block";
+                document.getElementById("hidee2").style.display="block";
+                            }
+            return a=1;  }
+        </script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+        <script>// Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyAvSXWzbhLMc9ShxfTxEsNzJqxfhFhBqyo",
+                authDomain: "project101-1b151.firebaseapp.com",
+                databaseURL: "https://project101-1b151-default-rtdb.firebaseio.com",
+                projectId: "project101-1b151",
+                storageBucket: "project101-1b151.appspot.com",
+                messagingSenderId: "1096381944683",
+                appId: "1:1096381944683:web:06561692ba44fb0a54722e",
+                measurementId: "G-M2G1ZKTHZX"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+
+            db.settings({timestampInSnapshots: true});
+            let fullname;
+        </script>
+        <script src="./authh.js"></script>
+    </body>
+</html>

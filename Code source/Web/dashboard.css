@@ -1,0 +1,152 @@
+body {
+    font-family:monospace;
+    background-color:#88C0D0;
+   }
+   .header {
+     background-color: #5e81ac;
+     padding: 5% 5%;
+   margin-top:-10px;
+   margin-left:-10px;
+   width:100%;}
+   h1,p {
+   color:#fff;
+   float:left;
+   margin-top:-40px;
+   margin-left:-40px;
+   font-family:monospace;
+   }
+   .show-btn{
+     background: #fff;
+     font-weight: 500;
+     color: #fff;
+     border-radius:10%;
+     margin-top:-95px;
+     margin-left: 40%;
+     cursor: pointer;
+     box-shadow: 0px 2px 7px rgba(0,0,0,5);
+    padding: 5.5% 6%;
+    position:relative;
+      top: 60%;
+      text-align:center;
+   }
+   .show-btn, .container{
+     position: absolute;
+     top: 65%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+    input[type="checkbox"]{
+     display: none;
+   }
+   .container{
+     position: absolute;
+     top: 60%;
+     border-radius:20px;
+     display: none;
+     background: #4C566A;
+     width: 400px;
+     padding: 15px 40px;
+     margin-bottom:300px;
+     box-shadow: 0 0 50px rgba(0,0,0,0.1);
+   }
+   #show:checked ~ .container{
+     display: block;
+     margin-bottom: 16px;
+   }
+   .container .close-btn{
+     position: absolute;
+     right: 20px;
+     top: 15px;
+     font-size: 18px;
+     cursor: pointer;
+   }
+   .container .close-btn:hover{
+     color: #fff;
+   }
+   .container .text{
+     font-size: 25px;
+      margin-top: 10px;
+     font-weight: 600;
+     text-align: center;
+     color:#fff;}
+   .container form{
+     margin-top: 30px;
+     border-radius:10px;
+   }
+   .container form .data{
+     height: 45px;
+     width: 100%;
+     margin: 20px 0;
+   }
+   form .data label{
+     font-size: 18px;
+     color:#fff;
+   }
+   form .data input{
+     height: 100%;
+     width: 100%;
+     padding-left: 10px;
+     font-size: 17px;
+     border: 1px #fff;
+   }
+   form .data input:focus{
+     border-color: #fff;
+     border-bottom-width: 2px;
+   }
+   form .forgot-pass a{
+     color: #fff;
+     text-decoration: none;
+   }
+   form .forgot-pass a:hover{
+     text-decoration: underline;
+   }
+   form .btn{
+     margin: 30px 0;
+     height: 45px;
+     width: 100%;
+     position: relative;
+     overflow: hidden;
+   }
+   form .btn:hover .bu{
+     transition: all 0.4s;
+     background: -webkit-linear-gradient(right,#4C566A,#2E3440,#4C566A,#2E3440);
+   }
+   form .btn button{
+     transition: all 0.4s;
+     height: 100%;
+     margin-left:20%;
+     position: absolute;
+     width: 60%;
+     border-radius:40px;
+     background: -webkit-linear-gradient(right, #2E3440,#4C566A,#2E3440,#4C566A);
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     cursor: pointer;
+   }
+   ul {
+    max-width:80%;
+   }
+   ul li {
+   display: inline-flex;
+    margin: 30px 30px;
+    position:relative;
+    height: 28%;
+    background-color:#fff;
+    line-height:40px;
+     top: 60%;
+     border-radius:10px;
+     background: #fff;
+     width: 14%;
+       box-shadow: 0px 2px 7px rgba(0,0,0,5);
+   }
+   ul li.hi {
+   font-size:20px;
+   display: block;
+   }
+   ul li.hi .yo {
+   color:#FF7F50;
+   font-size:60px;
+   }

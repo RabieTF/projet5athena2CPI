@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1096381944683",
+    "firebase_url": "https://project101-1b151-default-rtdb.firebaseio.com",
+    "project_id": "project101-1b151",
+    "storage_bucket": "project101-1b151.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096381944683:android:39c2d69d04dead1254722e",
+        "android_client_info": {
+          "package_name": "dz.esi.athena"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096381944683-4lg81j75iv81aaernko81cfooqj8omhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2kJs7bmyNGSnenee8yZZ8jf9SrMFEpbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096381944683-4lg81j75iv81aaernko81cfooqj8omhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
